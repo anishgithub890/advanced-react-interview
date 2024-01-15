@@ -26,17 +26,17 @@ const Count = () => {
       </h1>
       <div className="flex flex-row pt-4 justify-center">
         <button
-          onClick={addCount}
-          className="w-48 shadow-md p-2 text-xl rounded-sm border border-rose-200 bg-red-100 hover:bg-red-300 transition"
-        >
-          +
-        </button>
-        <p className="p-4 w-48">{count}</p>
-        <button
           onClick={minusCount}
           className="w-48 shadow-md p-2 text-xl rounded-sm border border-rose-200 bg-red-100 hover:bg-red-300 transition"
         >
           -
+        </button>
+        <p className="p-4 w-48">{count}</p>
+        <button
+          onClick={addCount}
+          className="w-48 shadow-md p-2 text-xl rounded-sm border border-rose-200 bg-red-100 hover:bg-red-300 transition"
+        >
+          +
         </button>
       </div>
     </>
