@@ -21,18 +21,20 @@ const Count = () => {
 
   return (
     <>
-      <h1 className="text-3xl font-semibold underline">Hello World!</h1>
-      <div className="flex flex-col pt-4">
+      <h1 className="text-xl font-semibold underline underline-offset-2">
+        Conditional Check Add and Minus Numbers
+      </h1>
+      <div className="flex flex-row pt-4 justify-center">
         <button
           onClick={addCount}
-          className="p-2 text-xl rounded-sm border border-rose-200 bg-red-100 hover:bg-red-300 transition"
+          className="w-48 shadow-md p-2 text-xl rounded-sm border border-rose-200 bg-red-100 hover:bg-red-300 transition"
         >
           +
         </button>
-        <p className="p-4">{count}</p>
+        <p className="p-4 w-48">{count}</p>
         <button
           onClick={minusCount}
-          className="p-2 text-xl rounded-sm border border-rose-200 bg-red-100 hover:bg-red-300 transition"
+          className="w-48 shadow-md p-2 text-xl rounded-sm border border-rose-200 bg-red-100 hover:bg-red-300 transition"
         >
           -
         </button>
