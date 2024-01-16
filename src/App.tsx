@@ -6,6 +6,7 @@ import ProductDetail from './pages/products/product-details';
 import Home from './pages/home';
 import ProductHome from './pages/products/product-home';
 import BreadCrumbs from './components/breadcrumbs';
+import Polyfill from './pages/polyfill/useEffect-hook-polyfill';
 
 const App = () => {
   return (
@@ -28,6 +29,9 @@ const App = () => {
             <div className="text-rose-500 hover:text-rose-600 font-semibold text-center p-2 text-md hover:underline hover:underline-offset-2 transition">
               <Link to="/product">Product</Link>
             </div>
+            <div className="text-rose-500 hover:text-rose-600 font-semibold text-center p-2 text-md hover:underline hover:underline-offset-2 transition">
+              <Link to="/polyfill">Polyfill</Link>
+            </div>
           </div>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -35,6 +39,7 @@ const App = () => {
             <Route path="/product" element={<ProductHome />} />
             <Route path="/products" element={<ProductListing />} />
             <Route path="/products/:id" element={<ProductDetail />} />
+            <Route path="/polyfill" element={<Polyfill />} />
           </Routes>
         </div>
       </BrowserRouter>

@@ -9,7 +9,7 @@ const BreadCrumbs = () => {
   return (
     <>
       <span className="flex flex-row gap-2">
-        <Link to="/" className="underline text-blue-500 underline-offset-4">
+        <Link to="/" className="text-blue-500">
           Home
         </Link>
 
@@ -17,17 +17,11 @@ const BreadCrumbs = () => {
           breadcrumbPath += `/${name}`;
           const isLast = index === pathname.length - 1;
           return isLast ? (
-            <span
-              key={breadcrumbPath}
-              className="underline text-blue-500 underline-offset-4"
-            >
+            <span key={breadcrumbPath} className="text-blue-500">
               / {name}
             </span>
           ) : (
-            <span
-              key={breadcrumbPath}
-              className="underline text-blue-500 underline-offset-4"
-            >
+            <span key={breadcrumbPath} className="text-blue-500">
               / <Link to={breadcrumbPath}>{name}</Link>
             </span>
           );
